@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-fighter-gun, #img-fighter-box, #img-fighter-samurai, #img-fighter-karate {
+    width: 80px;
+    height: 80px;
+}
+#fighter_1,  #fighter_2, img {
+    max-width: 200px;
+    max-height: 200px;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+#fighter1,  #fighter2 {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    background-color: rgb(220, 203, 236);
+}
+
+#area-selecao{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 177, 202);
+}
+#pvp-area {
+    width: 100vw;
+    background-color: rgb(166, 238, 254);
+    text-align: center;
+}
+#fighter1-input,  #fighter2-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(251, 240, 190);
+}
