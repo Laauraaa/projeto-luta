@@ -4,36 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Mini game</title>
 </head>
 <body>
     <header>
-        <h1>Escolha seu personagem</h1>
+        <h1>MINI GAME</h1>
     </header>
     <main>
-        <div id="pool">
-            <input id="img-fighter-gun" type="image" src="images/gun.jpg" alt="" class="image-click">
+       <div id="pvp-area">
+            <div id="area-selecao">
+                <div id="fighter1">
+                    <div id="fighter1-input">
+                            <div><input id="img-fighter-gun" type="image" src="images/gun.jpg" alt="" class="image-click"></div>
+                            <div><input id="img-fighter-box" type="image" src="images/box.jpg" alt="" class="image-click"></div>
+                            <div><input id="img-fighter-samurai" type="image" src="images/samurai.jpg" alt="" class="image-click"></div>
+                            <div><input id="img-fighter-karate" type="image" src="images/karate.jpg" alt="" class="image-click"></div>
+                        </div>
+                        <div id="fighter_1"></div>
+                    </div>
+        
+                <div id="vs">
+                    <p><strong>VS</strong></p>
+                </div>
 
-            <input id="img-fighter-box" type="image" src="images/box.jpg" alt="" class="image-click">
-
-            <input id="img-fighter-samurai" type="image" src="images/samurai.jpg" alt="" class="image-click">
-
-            <input id="img-fighter-karate" type="image" src="images/karate.jpg" alt="" class="image-click">
-        </div>
-
-        <div id="pvp-area">
-            <h2>PvP Area</h2>
-            <p>Escolha quais personagens vão se enfrentar</p>
-            <div id="selection-character">
-                <div id="fighter_1" class="target-div"></div>
-                <div id="fighter_2" class="target-div"></div>
+                <div id="fighter2">
+                    <div id="fighter2-input">
+                        <div><input id="img-fighter-gun" type="image" src="images/gun.jpg" alt="" class="image-click"></div>
+                        <div><input id="img-fighter-box" type="image" src="images/box.jpg" alt="" class="image-click"></div>
+                        <div><input id="img-fighter-samurai" type="image" src="images/samurai.jpg" alt="" class="image-click"></div>
+                        <div><input id="img-fighter-karate" type="image" src="images/karate.jpg" alt="" class="image-click"></div>
+                    </div>
+                    <div id="fighter_2"></div>
+                </div>
             </div>
-            <input type="button" value="Lutar">
-
-            <div id="result">
-                <p>Clique em lutar para obter o resultado</p>
+            <input type="button" value="Play" class="button">
             </div>
         </div>
+        <div id="result">
+            <div id="result-text">
+                <p>Clique em play para obter o resultado</p>
+            </div>
     </main>
     <script src="scripts/characters.js"></script>
     <script src="scripts/script.js"></script>
