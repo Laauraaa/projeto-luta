@@ -30,7 +30,11 @@ h1 {
     font-weight: 100;
 
 }
-
+.button:hover {
+    color: #1E1E1E;
+    background-color: #7C6B82;
+    box-shadow: 2px 2px 20px #7C6B82;
+}
 .button {
     color: #C4AACC;
     font-size: 25px;
