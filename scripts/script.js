@@ -55,3 +55,5 @@ document.querySelector('#img-fighter-karate-2').addEventListener('click', () => 
     selection_2 ('karate')
     char2 = 'karate'
 } )
+
+

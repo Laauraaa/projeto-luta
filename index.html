@@ -10,43 +10,47 @@
     <title>Mini game</title>
 </head>
 <body>
-    <header>
-        <h1>MINI GAME</h1>
-    </header>
-    <main>
-       <div id="pvp-area">
-            <div id="area-selecao">
-                <div id="fighter1">
-                    <div id="fighter1-input">
-                            <div><input id="img-fighter-gun" type="image" src="images/gun.jpg" alt="" class="image-click"></div>
-                            <div><input id="img-fighter-box" type="image" src="images/box.jpg" alt="" class="image-click"></div>
-                            <div><input id="img-fighter-samurai" type="image" src="images/samurai.jpg" alt="" class="image-click"></div>
-                            <div><input id="img-fighter-karate" type="image" src="images/karate.jpg" alt="" class="image-click"></div>
+    <div class="laura">
+        <img src="images/star.png" alt="" id="img-laura">
+        <p id="text-laura">Site desenvolvido por <a href="https://www.linkedin.com/in/ana-laura-messias-a46341217/" target="_blank">Laura Messias</a></p>
+    </div>
+    <div id="body2">
+        <header>
+            <h1>MINI GAME</h1>
+        </header>
+        <main>
+           <div id="pvp-area">
+                <div id="area-selecao">
+                    <div id="fighter1">
+                        <div id="fighter1-input">
+                                <div><input id="img-fighter-gun" type="image" src="images/gun.jpg" alt="" class="image-click"></div>
+                                <div><input id="img-fighter-box" type="image" src="images/box.jpg" alt="" class="image-click"></div>
+                                <div><input id="img-fighter-samurai" type="image" src="images/samurai.jpg" alt="" class="image-click"></div>
+                                <div><input id="img-fighter-karate" type="image" src="images/karate.jpg" alt="" class="image-click"></div>
+                            </div>
+                            <div id="fighter_1"></div>
                         </div>
-                        <div id="fighter_1"></div>
-                    </div>
         
-                <div id="vs">
-                    <p><strong>VS</strong></p>
-                </div>
-
-                <div id="fighter2">
-                    <div id="fighter2-input">
-                        <div><input id="img-fighter-gun-2" type="image" src="images/gun.jpg" alt="" class="image-click"></div>
-                        <div><input id="img-fighter-box-2" type="image" src="images/box.jpg" alt="" class="image-click"></div>
-                        <div><input id="img-fighter-samurai-2" type="image" src="images/samurai.jpg" alt="" class="image-click"></div>
-                        <div><input id="img-fighter-karate-2" type="image" src="images/karate.jpg" alt="" class="image-click"></div>
+                    <div id="vs">
+                        <p><strong>VS</strong></p>
                     </div>
-                    <div id="fighter_2"></div>
+                    <div id="fighter2">
+                        <div id="fighter2-input">
+                            <div><input id="img-fighter-gun-2" type="image" src="images/gun.jpg" alt="" class="image-click"></div>
+                            <div><input id="img-fighter-box-2" type="image" src="images/box.jpg" alt="" class="image-click"></div>
+                            <div><input id="img-fighter-samurai-2" type="image" src="images/samurai.jpg" alt="" class="image-click"></div>
+                            <div><input id="img-fighter-karate-2" type="image" src="images/karate.jpg" alt="" class="image-click"></div>
+                        </div>
+                        <div id="fighter_2"></div>
+                    </div>
                 </div>
+                <input type="button" value="Play" class="button">
             </div>
-            <input type="button" value="Play" class="button">
+        </main>
+        <div id="result">
+            <div id="result-text">
+                <p>Clique em play para começar</p></div>
         </div>
-    </main>
-
-    <div id="result">
-        <div id="result-text">
-            <p>Clique em play para começar</p></div>
     </div>
 
     <script src="scripts/characters.js"></script>
