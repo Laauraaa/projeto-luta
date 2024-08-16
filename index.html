@@ -29,7 +29,7 @@
                                 <div><input id="img-fighter-karate" type="image" src="images/karate.jpg" alt="" class="image-click"></div>
                             </div>
                             <div id="fighter_area">
-                                <button id="modal">i</button>
+                                <button id="modal_button" onclick="OpenModal1()">i</button>
                                 <div id="fighter_1"></div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                             <div><input id="img-fighter-karate-2" type="image" src="images/karate.jpg" alt="" class="image-click"></div>
                         </div>
                         <div id="fighter_area">
-                            <button id="modal">i</button>
+                            <button id="modal_button" onclick="OpenModal2()">i</button>
                             <div id="fighter_2"></div>
                         </div>
                     </div>
@@ -57,6 +57,16 @@
             <div id="result-text">
                 <p>Clique em play para começar</p></div>
         </div>
+    </div>
+
+    <div id="dialog">
+        <dialog>
+            <h6>
+                Selecione os personagens que vão se enfrentar e aperte play, em caso de empate será escolhido aleatóriamente um vencedor.
+                Para ler as informações dos personagens selecione um personagem e clique no ícone "i".
+            </h6>
+            
+        </dialog>
     </div>
 
     <script src="scripts/characters.js"></script>

@@ -15,43 +15,43 @@ let char2 = ''
 //char 1
 document.querySelector('#img-fighter-gun').addEventListener('click', () => {
     selection_1 ('gun')
-    char1 = createGun('gun')
+    char1 = createGun('Raven Noir')
 } )
 
 document.querySelector('#img-fighter-box').addEventListener('click', () => {
     selection_1 ('box')
-    char1 = createBox('Box')
+    char1 = createBox('Zara "The Hurricane" Monroe')
 } )
 
 document.querySelector('#img-fighter-samurai').addEventListener('click', () => {
     selection_1 ('samurai')
-    char1 = createSamurai('samurai')
+    char1 = createSamurai('Kenshiro Takeda')
 } )
 
 document.querySelector('#img-fighter-karate').addEventListener('click', () => {
     selection_1 ('karate')
-    char1 = createKarate('karate')
+    char1 = createKarate('Aiko Tachibana')
 } )
 
 //char 2
 document.querySelector('#img-fighter-gun-2').addEventListener('click', () => {
     selection_2 ('gun')
-    char2 = createGun('gun')
+    char2 = createGun('Raven Noir')
 } )
 
 document.querySelector('#img-fighter-box-2').addEventListener('click', () => {
     selection_2 ('box')
-    char2 = createBox('box')
+    char2 = createBox('Zara "The Hurricane" Monroe')
 } )
 
 document.querySelector('#img-fighter-samurai-2').addEventListener('click', () => {
     selection_2 ('samurai')
-    char2 = createSamurai('samurai')
+    char2 = createSamurai('Kenshiro Takeda')
 } )
 
 document.querySelector('#img-fighter-karate-2').addEventListener('click', () => {
     selection_2 ('karate')
-    char2 = createKarate('karate')
+    char2 = createKarate('Aiko Tachibana')
 } )
 
 // button play
@@ -104,9 +104,44 @@ function play() {
     document.querySelector('#result-text').innerHTML = `Houve um empate, selecione personagens diferentes.`
   }
 } 
-/*function points(char1victory, char2victory){
-    console.log(char1victory)
-    console.log(char2victory)
-}*/
 
+//modal 1
+let modal = document.querySelector("dialog") 
+function OpenModal1() {
+  modal.showModal()
+  if (char1 === '') {
+    
+  } else {
+    modal.innerHTML = `<h3>${char1.name}</h3> 
+    <h6>${char1.lore}</h6>
+    <br>
+    <h4>Atributos</h4>
+  
+    <p>
+      vida:${char1.life}
+      <br> defesa:${char1.defense}
+      <br> agilidade: ${char1.agility}
+      <br> ataque: ${char1.attack}
+      <br> dano mágico: ${char1.magic_damage}
+    </p>`
+  }
+}
+//modal 2
+function OpenModal2() {
+  modal.showModal()
+  if (char2 === '') {
+    
+  } else {
+    modal.innerHTML = `<h3>${char2.name}</h3> 
+    <h6>${char2.lore}</h6>
+    <h4>Atributos</h4>
+    <p>
+      <br> vida:${char2.life}
+      <br> defesa:${char2.defense}
+      <br> agilidade: ${char2.agility}
+      <br> ataque: ${char2.attack}
+      <br> dano mágico: ${char2.magic_damage}
+    </p>`
+  }
+}
 

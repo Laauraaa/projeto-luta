@@ -159,7 +159,7 @@ h1 {
     align-items: flex-start; /* Alinha o conteúdo ao topo */
     height: 100%;
 }
-#modal {
+#modal_button {
     background-color: #1E1E1E;
     color: #b69ec0;
     border: none;
@@ -173,5 +173,42 @@ h1 {
     cursor: pointer;
     bottom: 0; 
     right: 0;
+}
+dialog::backdrop{
+    background-color: #1e1e1e69;
+}
+dialog {
+    font-size: 20px;
+    border: none;
+    background-color: #C4AACC;
+    border-radius: 35px;
+    text-align: center;
+    padding: 40px;
     
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+dialog > h3 {
+    font-family: 'porter-sans', cursive;
+    font-weight: 100;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+dialog > h4 {
+    background-color: #7C6B82;
+    border-radius: 10px;
+    font-family:  'Permanent Marker', cursive;
+}
+dialog > h6 {
+    font-size: 20px;
+    text-align: center;
+}
+dialog > p {
+    font-family: 'Permanent Marker', cursive;
 }
